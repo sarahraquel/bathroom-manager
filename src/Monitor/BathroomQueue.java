@@ -36,7 +36,6 @@ public class BathroomQueue {
     	
     	buffer.add(item);
     	System.out.println(Thread.currentThread().getName() + " entrou: ");
-    	notify();
     }
     
 

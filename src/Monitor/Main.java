@@ -11,9 +11,9 @@ public class Main {
 		int qtd = 8;
 		Pessoa pessoas[] = new Pessoa[qtd];
 
-		for (int i = 0; i < qtd/2; i++) {
-			pessoas[i] = new Pessoa("Pessoa " + (i+1), true, queue);
-			pessoas[i+(qtd/2)] = new Pessoa("Pessoa " + (i+1+(qtd/2)), false, queue);
+		for (int i = 0; i < qtd; i++) {
+			double aleatorio =  (int) (Math.random() * 10);
+			pessoas[i] = new Pessoa("Pessoa " + (i+1), aleatorio%2==0? true:false, queue);
 		}
 
 		try {

@@ -1,10 +1,6 @@
 package Monitor;
 
 public class Pessoa extends Thread {
-	/** 
-	 * Referencia ao monitor compartilhado entre as 
-	 * <em>threads</em>
-	 */
 	private BathroomQueue queue;
 	private boolean gender; //True homem, False mulher
 	
